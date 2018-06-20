@@ -1,0 +1,30 @@
+{
+  "ads":"idol.jpg",
+  "limit":false,
+  "idol": [
+    {
+      "id": 1,
+      "name":"a1",
+      "age": 25,
+      "address":"Yangon",
+      "job":"Singer",
+      "photos":"a1.jpg",
+      "sms":{
+        "ooredoo":1331
+      },
+      "code":"MMID 111"
+    },
+    {
+      "id": 2,
+      "name":"a2",
+      "age": 25,
+      "address":"Yangon",
+      "job":"Singer",
+      "photos":"http://",
+      "sms":{
+        "ooredoo":1331
+      },
+      "code":"MMID 222"
+    }
+  ]
+}
