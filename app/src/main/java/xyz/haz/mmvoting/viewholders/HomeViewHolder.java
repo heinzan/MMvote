@@ -4,6 +4,8 @@ import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.squareup.picasso.Picasso;
+
 import butterknife.BindView;
 import xyz.haz.mmvoting.R;
 import xyz.haz.mmvoting.controllers.ControllerMatchItem;
@@ -33,8 +35,7 @@ public class HomeViewHolder extends BaseViewHolder<MatchVO> {
     @Override
     public void bind(MatchVO data) {
 
+        Picasso.get().load(data.getPhotos()).into(imgCategory);
 
-
-
-    }
+        }
 }

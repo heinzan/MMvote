@@ -30,12 +30,12 @@ public class HomeAdapter extends BaseRecyclerAdapter<HomeViewHolder,MatchVO> {
 
     @Override
     public void onBindViewHolder(HomeViewHolder holder, int position) {
-       // holder.bind(mData.get(position));
+        holder.bind(mData.get(position));
 
     }
 
     @Override
     public int getItemCount() {
-        return 3;
+        return mData.size();
     }
 }

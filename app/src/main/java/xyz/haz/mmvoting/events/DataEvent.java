@@ -9,6 +9,22 @@ import xyz.haz.mmvoting.data.vo.MatchVO;
  */
 
 public class DataEvent {
+
+    public static class EmptyResponseEvent{
+
+    }
+
+    public static class ErrorInvokeEvent{
+        private String errorMsg;
+
+        public String getErrorMsg() {
+            return errorMsg;
+        }
+
+        public ErrorInvokeEvent(String errorMsg) {
+            this.errorMsg = errorMsg;
+        }
+    }
     public static class MatchLoadEvent{
 
         private List<MatchVO> matchList;

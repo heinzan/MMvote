@@ -30,6 +30,9 @@ public class MatchListResponse {
     }*/
 
     public ArrayList<MatchVO> getMatchList() {
+        if(matchList == null){
+            matchList = new ArrayList<>();
+        }
         return matchList;
     }
 

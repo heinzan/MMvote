@@ -16,17 +16,15 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        if (!EventBus.getDefault().isRegistered(this)) {
 
-            EventBus.getDefault().isRegistered(this);
-        }
+
+            EventBus.getDefault().register(this);
+
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        if (EventBus.getDefault().isRegistered(this)) {
-            EventBus.getDefault().register(this);
-        }
+        EventBus.getDefault().unregister(this);
     }
 }
